@@ -56,21 +56,12 @@ int main(){
     
     if((x2>x1)&&(v2>v1))
         {        cout<<"NO";
-         common++;
+        
         }
-    if(common==0)
-        {
-    do{
-        x1+=v1;
-        x2+=v2;
-        common++;
-        }while(x1!=x2);
-
-    if(x1==x2)
-   cout<<"YES";
-   else 
-       cout<<"NO";
-    }
+           if((v1!=v2) && ((x2-x1)%(v1-v2))==0)
+               cout<<"YES";
+           else
+                cout<<"NO";
     
     return 0;
 }
