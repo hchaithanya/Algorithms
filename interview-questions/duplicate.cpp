@@ -28,13 +28,8 @@ void dupli(char *name, int l)
 			name[i]=name[j+1];
 			}
 		}
-	//name[j]==name[count+1];
 	}
-	for(i=0;i<l;i++)
-	{
-		cout<<name[i];
-	}
-	//display(*name,l);
+	display(name,l);
 }
 
 
